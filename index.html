@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Bags - Handmade & Unique</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <h1>Crochet Bags Emporium</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Crochet Bags Emporium</h2>
+        <p>Discover unique, handmade crochet bags perfect for everyday style. Shop now!</p>
+        <a href="#products" class="btn">Browse Bags</a>
+    </section>
+
+    <section id="products">
+        <h2>Our Crochet Bags</h2>
+        <div class="product-grid">
+            <div class="product">
+               <img src="https://media.istockphoto.com/id/1328283250/photo/handmade-macrame-bag-on-the-light-wall-eco-friendly-natural-macrame-cotton-bag-hobby-knitting.jpg?s=1024x1024&w=is&k=20&c=fyWyNUiksgAyW-Gx8A_neU2Fx_QBpl_Sp5u5yPEUaGE=" alt="Striped Crochet Tote">
+                <h3>Striped Crochet Tote</h3>
+                <p>Colorful striped design, perfect for beach or city outings. Made with 100% cotton yarn.</p>
+                <p class="price">$25.99</p>
+                <button class="add-to-cart" data-id="1" data-name="Striped Crochet Tote" data-price="25.99">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/185108999/photo/crocheted-purse.jpg?s=1024x1024&w=is&k=20&c=Bn3TRXoq8pg2Xj1vmp6wsQwC_7QyAutnZxVV5osY05M=" alt="Floral Crochet Shoulder Bag">
+                <h3>Floral Crochet Shoulder Bag</h3>
+                <p>Elegant floral pattern, adjustable strap. Eco-friendly and durable.</p>
+                <p class="price">$32.50</p>
+                <button class="add-to-cart" data-id="2" data-name="Floral Crochet Shoulder Bag" data-price="32.50">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src=https://images.unsplash.com/photo-1706518877496-9ffe450dfc57?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D width="200px""" alt="Minimalist Crochet Backpack">
+                <h3>Minimalist Crochet Backpack</h3>
+                <p>Simple yet stylish, with compartments for essentials. Handcrafted with care.</p>
+                <p class="price">$45.00</p>
+                <button class="add-to-cart" data-id="3" data-name="Minimalist Crochet Backpack" data-price="45.00">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We specialize in handmade crochet bags using high-quality yarns. Each piece is unique and supports sustainable crafting.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@crochetbags.com | Phone: (123) 456-7890</p>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Crochet Bags Emporium. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
